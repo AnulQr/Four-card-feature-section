@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+::before,
+::after,
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+body{
+  min-height: 100vh;
+  width: 100%;
+}
+
+.content{
+  padding: 7.8rem 3.2rem;
+}
+
+.cn-header{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  gap: 1.7rem;
+  text-align: center;
+}
+
+.txt-h1{
+  font-size: 3.5rem;
+  font-weight: 200;
+}
+
+.txt-h1 span{
+  font-weight: 600;
+}
+
+.txt-head{
+  color: rgba(79, 78, 84, 1);
+  font-size: 1.5rem;
+  max-width: 531px;
+  width: 100%;
+}
+
+.cn-boxcard{
+  margin-top: 6.5rem;
+  width: 100%;
+}
+
+.cn-boxcard .container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+  "card-1 card-2 card-4"
+  "card-1 card-3 card-4";
+  gap: 30px;
+  max-width: 1102px;
+  width: 100%;
+  margin: auto;
+}
+
+.card-1, .card-4{
+  align-self: center;
+}
+
+.box{
+  padding: 27px 31px 32px 31px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 9px 0px hsl(229, 6%, 66%);
+}
+
+.txt-h2{
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.txt-p{
+  font-size: 1.3rem;
+  color: rgba(157, 156, 161, 1);
+}
+
+.cn-img{
+  margin-top: 3.9rem;
+}
+
+.cn-img .row{
+  display: flex;
+  justify-content: end;
+}
+
+.box-img{
+  vertical-align: middle;
+}
+
+.card-1{
+  grid-area: card-1;
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.card-2{
+  grid-area: card-2;
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.card-3{
+  grid-area: card-3;
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.card-4{
+  grid-area: card-4;
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media (max-width : 1000px){
+  .cn-boxcard .container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "card-1 card-2"
+    "card-3 card-4";
+  }
+
+  .card-1, .card-4{
+    align-self: normal;
+  }
+}
+
+
+@media (max-width : 500px){
+
+  .txt-h1{
+    font-size: 2.5rem;
+  }
+
+  .cn-boxcard .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+
+
+
+
